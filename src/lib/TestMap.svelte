@@ -16,7 +16,7 @@
 
     const locations = [
         { lat: 42.345573, lng: -71.098326 },
-        { lat: 42.34542,  lng: -71.098238 },
+        { lat: 42.34542, lng: -71.098238 },
         { lat: 42.3455569, lng: -71.0977137 },
     ]
 
@@ -24,23 +24,17 @@
     let location = $state(defaultLocation)
 
     onMount(() => {
-        map = new Map(
-            mapElement,
-            {
-                center: defaultLocation,
-                zoom: 14,
-            }
-        )
-        panorama = new StreetViewPanorama(
-            mapElement,
-            {
-                position: defaultLocation,
-                pov: {
-                    heading: 34,
-                    pitch: 10,
-                },
-            }
-        )
+        map = new Map(mapElement, {
+            center: defaultLocation,
+            zoom: 14,
+        })
+        panorama = new StreetViewPanorama(mapElement, {
+            position: defaultLocation,
+            pov: {
+                heading: 34,
+                pitch: 10,
+            },
+        })
 
         map.setStreetView(panorama)
     })
