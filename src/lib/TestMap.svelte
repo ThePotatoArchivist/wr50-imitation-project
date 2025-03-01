@@ -40,7 +40,6 @@
     })
 
     $effect(() => {
-        $inspect(location)
         panorama.setPosition(location)
     })
 </script>
