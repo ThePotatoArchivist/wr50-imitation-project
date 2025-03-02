@@ -5,10 +5,7 @@ const loader = new Loader({
     version: 'weekly',
 })
 
-export const [
-    { Map }, 
-    { StreetViewPanorama }
-] = await Promise.all([
+export const [{ Map }, { StreetViewPanorama }] = await Promise.all([
     loader.importLibrary('maps'),
     loader.importLibrary('streetView'),
 ])

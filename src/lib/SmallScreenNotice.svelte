@@ -5,7 +5,8 @@
 <div class="container" class:hidden>
     <div class="dialog">
         Please view on a wider screen or rotate your device
-        <div class="close" onclick={() => hidden = true}></div>
+        <button aria-label="close" class="close" onclick={() => (hidden = true)}
+        ></button>
     </div>
 </div>
 
@@ -18,10 +19,10 @@
         place-items: center;
     }
 
-    .container.hidden { 
+    .container.hidden {
         display: none;
     }
-    
+
     .dialog {
         position: relative;
         border-radius: 1em;
@@ -39,7 +40,8 @@
         cursor: pointer;
     }
 
-    .close::before, .close::after {
+    .close::before,
+    .close::after {
         position: absolute;
         width: 100%;
         height: 10%;

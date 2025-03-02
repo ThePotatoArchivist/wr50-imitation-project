@@ -3,18 +3,23 @@
     import { ANCHORS } from './ScrollContainer.svelte'
     import type { Writable } from 'svelte/store'
 
-    let { children }: {
-        children: Snippet,
+    let {
+        children,
+    }: {
+        children: Snippet
     } = $props()
 
     let container: HTMLElement
 
-    const parentAnchors = getContext<Writable<HTMLElement[]> | undefined>(ANCHORS)
+    const parentAnchors = getContext<Writable<HTMLElement[]> | undefined>(
+        ANCHORS
+    )
 
     onMount(() => {
-        if (parentAnchors === undefined) return;
+        if (parentAnchors === undefined) return
         parentAnchors.update(anchors => [...anchors, container])
-        return () => parentAnchors.update(anchors => anchors.filter(e => e != container))
+        return () =>
+            parentAnchors.update(anchors => anchors.filter(e => e != container))
     })
 </script>
 
