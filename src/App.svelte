@@ -424,7 +424,9 @@
                     disableDefaultUI
                     draggable={false}
                     mapTypeId={MapTypeId.SATELLITE}
-                    mapId='MAP' />
+                    mapId='MAP'
+                    pathColor='blue'
+                    currentLocationColor='orange' />
                 <StreetviewMap
                     {...location}
                     zoomControl={false}
