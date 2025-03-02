@@ -1,11 +1,12 @@
 <script lang="ts">
-    import { Map, StreetViewPanorama, type LatLngLiteral, type StreetViewPov } from './maps'
+    import { Map, StreetViewPanorama, type LatLngLiteral, type StreetViewPanoramaOptions, type StreetViewPov } from './maps'
     import { onMount } from 'svelte'
 
-    let { position, pov }: { 
+    let { position, pov, center = position, ...otherOptions }: { 
         position: LatLngLiteral,
         pov: StreetViewPov,
-    } = $props()
+        center?: LatLngLiteral,
+    } & Omit<StreetViewPanoramaOptions, 'position' | 'pov' | 'zoom'> = $props()
 
     let mapElement: HTMLElement
     let map: Map
@@ -13,15 +14,13 @@
 
     onMount(() => {
         map = new Map(mapElement, {
-            center: position,
+            center,
             zoom: 14,
         })
         panorama = new StreetViewPanorama(mapElement, {
-            position: position,
-            pov: {
-                heading: 34,
-                pitch: 10,
-            },
+            position,
+            pov,
+            ...otherOptions
         })
 
         map.setStreetView(panorama)

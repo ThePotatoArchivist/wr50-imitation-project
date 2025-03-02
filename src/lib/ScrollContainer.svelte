@@ -8,7 +8,7 @@
     import { setContext, type Snippet } from 'svelte'
     import { writable } from 'svelte/store'
 
-    let { progress = $bindable(0), children, anchor = 'top' }: {
+    let { progress = $bindable(getProgress()), children, anchor = 'top' }: {
         progress?: number,
         children: Snippet,
         anchor?: AnchorBehavior,
@@ -18,26 +18,29 @@
 
     setContext(ANCHORS, anchors)
 
-    function updateProgress(height: number) {
+    function getProgress() {
+        const height = getHeight()
         const boxes = $anchors.map(anchor => anchor.getBoundingClientRect())
         const targetIndex = boxes.findIndex(box => height <= box.bottom)
-        if (targetIndex === -1) {
-            progress = $anchors.length
-            return
-        }
+        if (targetIndex === -1)
+            return $anchors.length
         const targetBox = boxes[targetIndex]
         if (targetBox.top <= height)
-            progress = targetIndex + (height - targetBox.top) / targetBox.height
+            return targetIndex + (height - targetBox.top) / targetBox.height
         else
-            progress = targetIndex
+            return targetIndex
+    }
+
+    function getHeight() {
+        switch (anchor) {
+            case 'top': return 0
+            case 'middle': return window.innerHeight / 2
+            case 'bottom': return window.innerHeight
+        }
     }
 
     function onscrollWindow() {
-        switch (anchor) {
-            case 'top': updateProgress(0); break
-            case 'middle': updateProgress(window.innerHeight / 2); break
-            case 'bottom': updateProgress(window.innerHeight); break
-        }
+        progress = getProgress()
     }
 </script>
 
