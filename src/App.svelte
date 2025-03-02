@@ -21,6 +21,12 @@
             pov: { heading: 252.51, pitch: 14.374 },
         },
         {
+            // Gloria Molina Park
+            // @34.0567083,-118.2473204,3a,75y,127.48h,75.33t
+            position: { lat: 34.0567083, lng: -118.2473204 },
+            pov: { heading: 127.48, pitch: -14.67 },
+        },
+        {
             // Caltrans
             position: { lat: 34.0522954, lng: -118.2434409 },
             pov: { heading: 179.12, pitch: 19.6 },
@@ -75,6 +81,10 @@
             that plagued me in History. But my mind began to change with our
             architecture field trip to Downtown Los Angeles.
         </p>
+        
+        <img src="/images/general_1.jpg" alt="Skyscrapers past an intersection" />
+        
+        <img src="/images/general_2.jpg" alt="Tall, cubical buildings" />
     </div>
 
     <div class="scroll-container">
@@ -115,7 +125,7 @@
                     he was willing to help me out. "Oh- thank you!" I said. We
                     then boarded the train to ascend the hill.
                 </p>
-
+                
                 <ScrollAnchor>
                     <h2>Walt Disney Concert Hall</h2>
                 </ScrollAnchor>
@@ -148,11 +158,19 @@
                     panels. It hardly looked like a building, more like an
                     enormous sculpture.
                 </p>
+                
+                <img src="/images/disney_concert_hall_1.jpg" alt="Close front view of the concert hall" />
+                <img src="/images/disney_concert_hall_2.jpg" alt="Slightly further away front view of the concert hall showiing doors and stairs" />
+                
                 <p>
                     We took a group picture, then went around the back and found
                     a nice garden with a multilayered rose-shaped fountain and a
                     pretty view of more of the city.
                 </p>
+                
+                <img src="/images/disney_concert_hall_3.jpg" alt="Path through a garden" />
+                <img src="/images/disney_concert_hall_5.jpg" alt="Balcony view of the skyline" />
+                
                 <p>
                     The buildings prior had been interesting, sure, but the
                     Concert Hall blew me away. I had never thought too much
@@ -172,6 +190,17 @@
                     buildings, and especially the concert hall, made it clear to
                     me that I didn't have to pigeonhole myself into purely
                     technical projects.
+                </p>
+                
+                <ScrollAnchor>
+                    <h2>Interlude: Gloria Molina Park</h2>
+                </ScrollAnchor>
+                
+                <img src="/images/gloria_molina_1.jpg" alt="Walking down the center of the park" />
+                <img src="/images/gloria_molina_2.jpg" alt="The park fountain" />
+                
+                <p>
+                    At first I thought it was a huge pool but it's actually a thin layer of water over the ground than you can walk on.
                 </p>
 
                 <ScrollAnchor>
@@ -202,6 +231,10 @@
                     Other sides were more textured, with overlapping horizontal
                     pipe structures.
                 </p>
+                
+                <img src="/images/caltrans_1.jpg" alt="Balcony view of the skyline" />
+                <img src="/images/caltrans_2.jpg" alt="Balcony view of the skyline" />
+                
                 <p>
                     My team was assigned to this building. I was a bit nervous
                     about my part of the presentation, but my school gives us a
@@ -212,6 +245,9 @@
                     day and humidity, as well as the light installation title
                     "Motordom" designed to evoke cars rushing by on a freeway.
                 </p>
+
+                <img src="/images/caltrans_3.jpg" alt="Balcony view of the skyline" />
+
                 <p>
                     After our team finished presenting, I realized that I had
                     actually been excited to present the information I knew,
@@ -247,6 +283,8 @@
                     that there were pneumatic tubes and chutes used to shoot
                     mail around the building.
                 </p>
+                
+                <img src="/images/bradbury.jpg" alt="Inside of the Bradbury Building" />
 
                 <p>
                     What was most interesting to me was the feeling of being
@@ -287,8 +325,11 @@
                     Eventually I decided to eat from a taco place. They were a
                     bit too spicy for me but otherwise tasted great. The next
                     time we visited, I ate from a sandwich place which had a
-                    delicious perfectly crunchy-and-moist bread.
+                    delicious perfectly crunchy bread.
                 </p>
+                
+                <img src="/images/grand_central_market_1.jpg" alt="Right outside the Market looking through door" />
+                <img src="/images/grand_central_market_2.jpg" alt="Looking down aisle of food stands" />
 
                 <p>
                     Eating lunch at Grand Central Market was completely
@@ -317,6 +358,9 @@
                     organized grid. It was one last quite creative and
                     remarkable construction for us to see.
                 </p>
+                
+                <img src="/images/last_bookstore.jpg" alt="Entrance to the bookstore" />
+
             </ScrollContainer>
         </div>
 
@@ -714,5 +758,9 @@
     
     .citation {
         text-indent: 2em hanging;
+    }
+    
+    img {
+        width: 100%;
     }
 </style>
