@@ -1,0 +1,4 @@
+- [ ] Map
+- [ ] Photos
+- [ ] Craft Statement and Citations
+- [ ] Visual Design
