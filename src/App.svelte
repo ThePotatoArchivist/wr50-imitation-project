@@ -109,11 +109,11 @@
                     The ride cost $1, but when I checked my wallet I realized:
                     "Wait, I don't think I have any singles". Before I even had
                     time to process the situation I was in, another student said
-                    to me, "I can lend you a dollar". I was surprised -- I still
-                    didn't know most of my classmates very well, I probably had
-                    never spoken to this classmate before, and yet he was
-                    willing to help me out. "Oh- thank you!" I said. We then
-                    boarded the train to ascend the hill.
+                    to me, "I can lend you a dollar". I was surprised&mdash;I
+                    still didn't know most of my classmates very well, I
+                    probably had never spoken to this classmate before, and yet
+                    he was willing to help me out. "Oh- thank you!" I said. We
+                    then boarded the train to ascend the hill.
                 </p>
 
                 <ScrollAnchor>
@@ -291,13 +291,13 @@
                 </p>
 
                 <p>
-                    Eating lunch at Grand Central Market was completely extra --
-                    it had nothing to do with the architecture we were studying
-                    and our teacher could just have easily told us to bring
-                    lunches or eat school lunches. But he did so for our
-                    benefit. The activities we would do in CEA class were not
-                    solely for education, on the contrary a lot of care was put
-                    into making them fun as well.
+                    Eating lunch at Grand Central Market was completely
+                    extra&mdash;it had nothing to do with the architecture we
+                    were studying and our teacher could just have easily told us
+                    to bring lunches or eat school lunches. But he did so for
+                    our benefit. The activities we would do in CEA class were
+                    not solely for education, on the contrary a lot of care was
+                    put into making them fun as well.
                 </p>
 
                 <ScrollAnchor>
@@ -376,6 +376,308 @@
             present and future self - don't forget to be creative and build.
         </p>
     </div>
+
+    <div class="center-column">
+        <h1>Craft Statement</h1>
+
+        <p>
+            It took me a little while to think of a travel experience I wanted
+            to write about. I had been on plenty of vacations, but they weren't
+            very personally significant in my memory other than spending time
+            with family. In fact, it was hard for me to remember details from
+            most of the trips I could think of. After thoroughly writing out all
+            my possible travel experiences and how I might be able to connect
+            them to travel writing, I decided the travel experience that the
+            most growth had come out of was my trip to Downtown LA for my high
+            school Civil Engineering and Architecture (CEA) class.
+        </p>
+
+        <p>
+            The central theme is motivation. At the time of the trip, I was
+            struggling to find motivation in many of my more difficult classes,
+            including CEA, and after that trip, I realized how fun and
+            interesting CEA could be. This gave me motivation to work to do my
+            best, and although (or perhaps because) it was still a high-effort
+            class, I quite enjoyed the class and found it fulfilling. CEA taught
+            me the value of caring about my work, combining creativity with
+            technical skills, and working with my hands and not just my brain.
+        </p>
+
+        <p>
+            When people read my story, I want it to be an encouragement to
+            pursue creative and physical projects, not just technical and
+            digital ones. This is the realization I came to throughout CEA and
+            that I want to share with the audience. That includes present me, as
+            I have not continued these practices of creative and physical
+            projects as much as I would have liked to. I also want to illustrate
+            how much of a difference it makes to care about your work, as I
+            discovered due to this trip. My target audience is a novice
+            audience, people who are well versed in technical but not creative
+            projects. Since a website can only exist digitally, the primary
+            place this text would be advertised is through news sites or social
+            media.
+        </p>
+
+        <p>
+            The text deals with the travel writing conventions of self-growth
+            and author subjectivity. The DTLA trip was a turning point in my CEA
+            journey, which affected my personal growth as a whole. Like Teju
+            Cole, I tried to include a description of what happened <em>and</em> a
+            personal reflection at each destination, to show the progress
+            towards my conclusion. For example, at the Disney Concert Hall, I
+            described the architecture and our activities there, then discussed
+            my internal reflections on creative and technical skills. I wanted
+            to make sure all the parts of my conclusion about creativity and
+            motivation were built up throughout the piece, so that the reader
+            can come to the conclusion at the same time as I do in the writing.
+            The piece also involved author subjectivity, as my memory is not the
+            best and there were details I had to make a best guess as to what
+            happened, such as the dialogue. Most of the dialogue, including my
+            conversation with my teacher at the Grand Central Market and with my
+            friend at the end, is somewhat paraphrased, although I transcribed
+            it as best as I can remember. I wrote it as dialogue anyway, in
+            order to make the experience seem more vivid and in-the-present to
+            the reader. Also, I tried to make my reflections and realizations
+            based on real memories, but some had to be embellished for the sake
+            of flow. For example, I did not have those thoughts from the Disney
+            Concert Hall as clearly as I write them down. Much of it was
+            developed and cultivated in the class throughout the next few
+            months.
+        </p>
+
+        <p>
+            The text uses multiple rhetorical methods to persuade the reader of
+            my growth and my main message of trying creative activities. I show
+            that I have personally been to DTLA and experienced both sides of
+            the technical/creative design, which shows that I am qualified to
+            discuss both DTLA and creative/technical projects. This appeal also
+            falls under <em>ethos</em>, since it concerns my credibility. I also
+            included a summary of the history of each building to provide the
+            reader with context and a more complete understanding of the
+            building I was discussing, as well as to prove my credibility to the
+            reader by showing that I have done this background research. This is
+            an appeal that falls under <em>logos</em> and <em>ethos</em>. Finally, I wrote the
+            text in the reflective, serious tone of contemporary travel authors
+            to emphasize my self-growth on the journey. It shows I am sincere
+            and carefully consider what I learned from the experience, and
+            hopefully inspires them to value and try out creative projects as
+            well. This is an appeal that falls under <em>pathos</em>, since the growth
+            I describe is a value and not a logical or ethical argument.
+        </p>
+
+        <p>
+            I made the piece in the form of an interactive website which
+            includes text and pictures in a traditional scrolling pane, and a
+            map and Google street view. The map shows markers indicating the
+            main locations we visited. Scrolling the text/pictures advances the
+            map and street view, and clicking the map or moving in street view
+            scrolls the content, showing a strong but dynamic link between
+            writing/photos and location. This involves linguistic, visual, and
+            spatial modes. I included a street view component to better engage
+            the audience, as they are actively controlling their point of view
+            on the map, and to better immerse them in the story, as if they are
+            walking in the streets of Downtown LA with me. This is especially
+            fitting for my story because a city has many details around every
+            corner to see, and unlike nature travel destinations it is well
+            documented by Google street view. The website as a whole also serves
+            as an example of combining my technical skills with creativity,
+            which is one of the topics of my story. Because I made a website
+            linked to google street view, I had to figure out the design for the
+            website, write the code for layout and interactivity, and learn how
+            to use the Google Maps API.
+        </p>
+
+        <p>
+            Originally, I was going to include more conventions, such as travel
+            writers as scientific researchers, disdain for tourists, and the
+            subversion of traveling to an urban rather than natural location.
+            However, I found these more difficult to integrate into the story
+            and relate back to my central message, since the focus was on
+            motivation and creativity which are not really related to
+            wilderness, tourism, or research. There were also some more
+            locations I had photos of, such as the Museum of Contemporary Art
+            and The Broad, but I didn't remember any details from them and
+            consequently wasn't sure how to integrate them into my main point,
+            so they were cut from the final draft. Earlier in the revision
+            process I also considered getting interviews and photos from my
+            classmates and teacher to bring in other voices and not have to rely
+            solely on my memory and photos, but because of how much I was
+            planning already I decided not to pursue that. While I started out
+            broad, all of these changes were made to put more quality and focus
+            on fewer elements, rather than covering many areas but only briefly.
+        </p>
+
+        <h2>Annotated Bibliography</h2>
+
+        <h3>Genre Model 1: Collier Nogues - "The Perimeter"</h3>
+        <p class="citation">
+            Nogues, Collier. "The Perimeter." Territory,
+            themapisnot.com/issue-iv-collier-nogues. Accessed 22 Feb. 2025.
+        </p>
+        <p>
+            Collier Nogues is the Assistant Professor of Creative Writing at the
+            Chinese University of Hong Kong. In "The Perimeter" she writes about
+            the Kadena Air Base on Okinawa, Japan. She grew up there and came
+            back after many years to discuss land politics, how it affected the
+            locals, and her own history on the base. She uses historical
+            evidence, photos and descriptions of what she sees, and
+            conversations with people she interacts with to show the harm the
+            base does to the land. I was inspired to use this source because the
+            interactive website form is similar to the form I want to achieve.
+            The map markers that seamlessly fade move in time with the scrolling
+            text and images helps paint a more vivid and immersive picture for
+            the reader. I based my website interactive design on Nogues' work.
+            For example, I also made my project with scrolling text and photos
+            and have an overview map, as well as a street view and clickable
+            markers.
+        </p>
+        <h3>Genre Model 2: Teju Cole - "After Caravaggio"</h3>
+        <p class="citation">
+            Cole, Teju. "After Caravaggio." Black Paper, The University of
+            Chicago Press, 2021, pp. 1-29.
+        </p>
+        <p>
+            Teju Cole is the Gore Vidal professor of the practice of creative
+            writing at Harvard and a writer for NY Times Magazine. His novels
+            and essays have won numerous awards. In "After Caravaggio", Cole
+            describes retracing the journeys of the painter Caravaggio. Cole
+            uses vivid visual descriptions of Caravaggio's paintings, historical
+            information about his actions and travels, and Cole's personal
+            experiences on his own trip to show that while Caravaggio was not a
+            great person, his art was remarkable for how clear and raw he could
+            depict the human condition and suffering. In Cole's personal
+            experience sections he describes how he feels sadness and encounters
+            tragedy and tension in the places he visits, made more prominent by
+            his meditation on Caravaggio's art. Cole's piece is similar to mine
+            in that we both traveled to multiple locations (although Cole
+            traveled a wider area) to see some form of art (painting and
+            architecture respectively) and had some sort of emotional reaction
+            from it. Using a similar structure to Cole's writing, with clear
+            sections of art description, historical context, and personal
+            reflection, helped to emphasize the connections between all of these
+            in my writing.
+        </p>
+        <h3>Genre Model 3: Milo Rossi - "Dark Routes"</h3>
+        <p class="citation">
+            Rossi, Milo. "Dark Routes Ep. 1: The Ruins of Guadalupe." YouTube,
+            uploaded by Miniminuteman, 19 Nov. 2023,
+            www.youtube.com/watch?v=ghMyjXPWUbs. Accessed 22 Feb. 2025.
+        </p>
+        <p>
+            Milo Rossi is an archaeologist and influencer who makes videos and
+            social media content on archaeology, anthropology, environmental
+            science, and debunking conspiracy theories. In "The Ruins of
+            Guadalupe", he shows how interesting but relatively unknown said
+            ruins are, as well as the Chocoan people who built them. He supports
+            this with footage of his journey to the ruins (which are on the top
+            of a plateau), videos of the detailed pottery and impressive
+            buildings, and background information on the Chocoans such as how
+            they built a strong road network which let them build with wood in
+            woodless places. I wanted to use Rossi's work because his trip was
+            undertaken entirely out of passion for his study of archaeology and
+            historical stories as a whole, which is similar to my increased
+            passion for my CEA class after going on the DTLA trip. Rossi conveys
+            and shares with the audience his enthusiasm for archaeology and
+            history very clearly and this is something I wanted to replicate.
+        </p>
+        <h3>Secondary Source 1: Thompson - Travel Writing</h3>
+        <p class="citation">
+            Thompson, Carl. Travel Writing. 1st ed., Taylor &amp; Francis Group,
+            2011. ProQuest Ebook Central,
+            https://ebookcentral.proquest.com/lib/uci/detail.action?docID=692374.
+        </p>
+        <p>
+            Carl Thompson is an author, as well as a Reader in English
+            Literature at the University of Surrey, and has extensively
+            researched and published in the field of travel writing. In Travel
+            Writing, he discusses what defines the genre, its different forms
+            throughout history (for example ethnographic vs autobiographical
+            forms), and ethical concerns (such as appropriation and creating a
+            foreign image of other cultures). He supports this with travel
+            writing pieces that demonstrate these traits, such as William
+            Dampier to show 17th-18th century scientific objectivism in travel
+            writing, and Henry Morton Stanley to show colonial attitudes towards
+            none-European lands. I chose Thompson because he provides extensive
+            background on all of the above topics in travel writing. I will use
+            Thompson's work to reference how what travel writing conventions
+            there are and how they are typically implemented, and decide which
+            conventions I want to include and how to implement them in my
+            writing.
+        </p>
+        <h3>Secondary Source 2: "History of Angels Flight<sup>&reg;</sup>"</h3>
+        <p class="citation">
+            "History of Angels Flight<sup>&reg;</sup>." Angels Flight
+            <sup>&reg;</sup>Railway, Angels Flight<sup>&reg;</sup> Railway Foundation,
+            www.angelsflight.org/history/. Accessed 1 Mar. 2025.
+        </p>
+        <p>
+            The Angels Flight<sup>&reg;</sup> Railway Foundation is the current
+            owner of Angels Flight<sup>&reg;</sup> Railway, having taken
+            ownership in 1996. "History of Angels Flight<sup>&reg;</sup>"
+            describes the construction, updates, dismantling, reconstruction,
+            and surrounding legal processes of Angels Flight<sup>&reg;</sup>
+            Railway over its lifetime, categorized by owner. I chose this source
+            because it was written by the official foundation currently managing
+            the railway. I used this source to provide background information on
+            Angels Flight<sup>&reg;</sup> Railway while I described my personal experience
+            there.
+        </p>
+        <h3>
+            Secondary Source 3: "The Music Center's Walt Disney Concert Hall"
+        </h3>
+        <p class="citation">
+            "The Music Center's Walt Disney Concert Hall." The Music Center,
+            www.musiccenter.org/visit-explore/visit-explore/campus/walt-disney-concert-hall/.
+            Accessed 1 Mar. 2025.
+        </p>
+        <p>
+            The Music Center is one of the largest performing arts center in the
+            nation, and the owner of the Walt Disney Concert Hall. "The Music
+            Center's Walt Disney Concert Hall" describes the construction and
+            design of the concert hall, including how it was funded by Lillian
+            Disney in honor of Walt Disney and the visual and acoustic design. I
+            chose this source because it was written by staff of the arts center
+            owning the concert hall. I used this source to provide background
+            information on Walt Disney Concert Hall while I described my
+            personal experience there.
+        </p>
+        <h3>
+            Secondary Source 4: "Flashback: Caltrans District 7 Headquarters /
+            Morphosis Architects"
+        </h3>
+        <p class="citation">
+            "Flashback: Caltrans District 7 Headquarters / Morphosis
+            Architects." ArchDaily, 15 Feb. 2012,
+            www.archdaily.com/206947/flashback-caltrans-district-7-headquarters-morphosis.
+            Accessed 1 Mar. 2025.
+        </p>
+        <p>
+            The text was written by the architects of Caltrans District 7
+            Headquarters. "Flashback: Caltrans District 7 Headquarters /
+            Morphosis Architects" describes the appearance and architecture of
+            the building, as well as a bit of its construction history. I chose
+            this source because it was the same source I used in 11th grade when
+            researching it for our field trip. I used this source to provide
+            background information on the Caltrans Headquarters while I
+            described my personal experience there.
+        </p>
+        <h3>Secondary Source 5: "About the Bradbury Building"</h3>
+        <p class="citation">
+            "About the Bradbury Building." Bradbury Building,
+            thebradburybuilding.com/about/. Accessed 1 Mar. 2025.
+        </p>
+        <p>
+            The article was written by the staff owning the Bradbury Building.
+            It describes the history of the building, including its conception
+            by Lewis Bradbury and how it was designed by draftsman George Wyman.
+            It also describes the building's inspiration from an 1887 science
+            fiction novel and its architectural features like ornate iron
+            railings. I chose this source because it was written by the staff
+            owning the Bradbury Building. I used this source to provide
+            background information on the Bradbury Building while I described my
+            personal experience there.
+        </p>
+    </div>
 </main>
 
 <SmallScreenNotice />
@@ -408,5 +710,9 @@
 
     .container {
         padding: 2em;
+    }
+    
+    .citation {
+        text-indent: 2em hanging;
     }
 </style>
