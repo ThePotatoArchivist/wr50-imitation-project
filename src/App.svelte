@@ -4,6 +4,7 @@
     import ScrollContainer from './lib/ScrollContainer.svelte'
     import SmallScreenNotice from './lib/SmallScreenNotice.svelte'
     import StreetviewMap from './lib/StreetviewMap.svelte'
+    import TypedDoc from './lib/TypedDoc.svelte'
 
     const locations: {
         position: LatLngLiteral
@@ -52,16 +53,15 @@
     <div class="center-column">
         <h2 class="header">Preface</h2>
         <p>
-            The first quarter of my 11th grade year was a lot harder than 9th &
-            10th grade had been. In general, I am more comfortable and confident
-            with STEM classes, but social studies classes are more difficult for
-            me. In my American History class (and English to a lesser degree),
-            we were often assigned a lot of reading and writing work. Because I
-            was less proficient, I had trouble getting motivated to work on the
-            assignments, which meant it often took me a long time to complete
-            it. As a result, I didn't have much free time and I often had to
-            stay up as late as 1am. I tried many different strategies to handle
-            it, such as going to libraries, eating snacks, and getting a
+            The first quarter of my 11th grade year was a lot harder than 9th
+            &amp; 10th grade had been. In general, I am more comfortable and
+            confident with STEM classes, but social studies classes are more
+            difficult for me. In my American History class (and English to a
+            lesser degree), we were often assigned a lot of reading and writing
+            work. Because I was less proficient, I had trouble getting motivated
+            to work on the assignments, which meant it often took me a long time
+            to complete them. I tried various strategies to handle this focus
+            issue, such as going to libraries, eating snacks, and getting a
             standing desk, but it was hard to find anything that consistently
             helped long-term. In fact, this is still something I deal with in
             general today.
@@ -83,12 +83,27 @@
                 <ScrollAnchor>
                     <h2>Angels Flight</h2>
                 </ScrollAnchor>
+
+                <TypedDoc>
+                    Angels Flight is an incline railway (funicular), originally
+                    built from August to December 1901 by Colonel James Ward
+                    Eddy near Clay Street. It passed through the hands of seven
+                    owners. Under the Oliver &amp; Williams Elevator Company, it
+                    was dismantled in May 1969 after the surrounding
+                    neighborhood was demolished for "urban renewal" and stored
+                    in a warehouse and was not fully rebuilt until 1996, several
+                    hundred feet south of its original location. Under the
+                    Angels Flight Railway Foundation, it was closed from 2013 to
+                    2017 for restoration and safety upgrades.
+                </TypedDoc>
+
                 <p>
                     One of our first stops was Angel's Flight, a very short
                     train ride up a steep hill. The ride car was shaped like a
                     trapezoid and was stepped on the inside so that the inside
                     was upright despite the angle. When I think back I imagine
-                    an incline of 45°, though in reality it is closer to 30°.
+                    an incline of 45&deg;, though in reality it is closer to
+                    30&deg;.
                 </p>
                 <p>
                     The ride cost $1, but when I checked my wallet I realized:
@@ -104,6 +119,22 @@
                 <ScrollAnchor>
                     <h2>Walt Disney Concert Hall</h2>
                 </ScrollAnchor>
+
+                <TypedDoc>
+                    The Walt Disney Concert Hall was designed by Frank Gehry and
+                    opened in 2003, funded by a $50 million gift from Lillian B.
+                    Disney in honor of her husband, the late Walt Disney. It is
+                    made out of over 6,000 stainless steel panels, shaped to
+                    connect back to the Dorothy Chandler Pavilion. It was
+                    designed for both visuals and audio, making use of skylights
+                    and a carpet to resemble Mrs. Disney's garden. Gehry
+                    collaborated with acoustician Dr. Yasuhisa Toyota to design
+                    the auditorium and other acoustic spaces. One of their
+                    acoustic decisions was to design the auditorium so that the
+                    performances sound just as good with an sparse auditorium
+                    compared to a packed one.
+                </TypedDoc>
+
                 <p>
                     The third stop on our field trip was the Walt Disney Concert
                     Hall. It was an incredible sight: massive flowing metal
@@ -142,9 +173,26 @@
                     me that I didn't have to pigeonhole myself into purely
                     technical projects.
                 </p>
+
                 <ScrollAnchor>
                     <h2>Caltrans District 7 Headquarters</h2>
                 </ScrollAnchor>
+
+                <TypedDoc>
+                    The Caltrans District 7 Headquarters is an office building
+                    for California Transportation that was completed in 2005.
+                    Nicknamed the "Death Star", it has high concrete walls, and
+                    the south facade is covered in solar panels which provide 5%
+                    of the building's power. It was designed with "Morphosis"
+                    architecture which means the skin moves by opening and
+                    closing panels depending on the temperature and sunlight. It
+                    has skip-stop elevators to conserve energy and speed up
+                    circulation by encouraging employees to take the stairs. THe
+                    light instalation is titled Motordom and was designed by
+                    Keith Sonnier to mimic the streaks of headlights on the
+                    highway.
+                </TypedDoc>
+
                 <p>
                     The next stop was CalTrans District 7 Headquarters. It was
                     all grey, but like the Disney Concert Hall it made up for
@@ -176,6 +224,20 @@
                 <ScrollAnchor>
                     <h2>Bradbury Building</h2>
                 </ScrollAnchor>
+
+                <TypedDoc>
+                    The Bradbury Building was created as the last building of
+                    Lewis Bradbury, a gold-mining millionare. It was designed by
+                    George Wynman, a draftsman who had no architectural
+                    training, and he was inspired by a commercial building in
+                    the 1887 Science Fiction Story "Looking Backward", which was
+                    described as "a vast hall full of light". The Bradbury
+                    Building's atrium is lit by skylight and has wrought iron
+                    walkways, marble stairs, and birdcage elevators. It has
+                    appeared in hundreds of films, television episodes, and
+                    other video productions including Bladerunner and 500 Days
+                    of Summer.
+                </TypedDoc>
 
                 <p>
                     The last building on our itinerary was the Bradbury
@@ -283,7 +345,7 @@
             And he was correct. This field trip had showed me two lessons. 1)
             There are somre really cool and interesting things you can do with
             architecture, and creative projects as a whole, including in tandem
-            with technical discliplines. 2) this class was about more than just
+            with technical discliplines. 2) This class was about more than just
             learning architecture. It was about growing together and caring
             about what we make.
         </p>
@@ -298,11 +360,12 @@
             fulfilling long-term. It was still a lot of work, as I had a lot to
             learn and undertook some ambitious projects, but because it was
             interesting and fun and fulfilling, I had enough motivation to
-            complete them. This renewed passion even spilled over into my
-            English class, and I found new motivation and enjoyment in the last
-            two units of English that year as well. Through CEA, I found new
-            friends, new ways of seeing and thinking, new ways to use my
-            creativity, and new passions.
+            complete them. In fact, the difficulty made the class more
+            meaningful, because I had to learn and grow to succeed. This renewed
+            passion even spilled over into my English class, and I found new
+            motivation and enjoyment in the last two units of English that year
+            as well. Through CEA, I found new friends, new ways of seeing and
+            thinking, new ways to use my creativity, and new passions.
         </p>
         <p>
             As I reflect on my experiences from high school, I do feel that I've
