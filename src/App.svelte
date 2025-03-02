@@ -9,17 +9,31 @@
         position: LatLngLiteral,
         pov: StreetViewPov,
     }[] = [
-        {
+        { // Angels Flight
             position: { lat: 34.0511031, lng: -118.249919 },
             pov: { heading: 48.61, pitch: 4.02 },
         },
-        {
+        { // Walt Disney Concert Hall
             position: { lat:  34.05564381902516, lng: -118.24903963257336 },
             pov: { heading: 252.510, pitch: 14.374 },
         },
-        {
+        { // Caltrans
             position: { lat: 34.0522954, lng: -118.2434409 },
             pov: { heading: 179.12, pitch: 19.6 },
+        },
+        { // Bradbury
+            // @34.0506715,-118.2476327,3a,90y,219.8h,97.79t
+            position: { lat: 34.0506715, lng: -118.2476327 },
+            pov: { heading: 219.8, pitch: 7.79 },
+        },
+        { // Grand Central Market
+            position: { lat: 34.0510505, lng: -118.2496353 },
+            pov: { heading: 89.33, pitch: 1.95 }
+        },
+        { // The Last BOokstore
+            // @34.0475974,-118.2500109,3a,75y,51.71h,102.33t
+            position: { lat: 34.0475974, lng: -118.2500109 },
+            pov: { heading: 51.7, pitch: 12.33 }
         }
     ]
     
@@ -61,7 +75,7 @@
         <div class="container">
             <ScrollContainer bind:progress anchor="middle">
                 <ScrollAnchor>
-                    <h2 class="header">Angels Flight</h2>
+                    <h2>Angels Flight</h2>
                 </ScrollAnchor>
                 <p>
                     One of our first stops was Angel's Flight, a very short train ride up a
@@ -80,7 +94,7 @@
                 </p>
                 
                 <ScrollAnchor>
-                    <h2 class="header">Walt Disney Concert Hall</h2>
+                    <h2>Walt Disney Concert Hall</h2>
                 </ScrollAnchor>
                 <p>
                     The third stop on our field trip was the Walt Disney Concert Hall. It was
@@ -113,10 +127,10 @@
                     technical knowledge to execute it. Seeing these buildings, and especially
                     the concert hall, made it clear to me that I didn't have to pigeonhole
                     myself into purely technical projects.
-                </p>          
+                </p>
                 <ScrollAnchor>
-                    <h2 class="header">Caltrans District 7 Headquarters</h2>
-                </ScrollAnchor>  
+                    <h2>Caltrans District 7 Headquarters</h2>
+                </ScrollAnchor>
                 <p>
                     The next stop was CalTrans District 7 Headquarters. It was all grey, but
                     like the Disney Concert Hall it made up for its lack of color with its
@@ -140,6 +154,81 @@
                     had presented for school. I was learning to care about the work we did in
                     this class, and caring means I'm motivated to put in the work to create a
                     higher quality output.
+                </p>
+
+                <ScrollAnchor>
+                    <h2>Bradbury Building</h2>
+                </ScrollAnchor>
+
+                <p>
+                    The last building on our itinerary was the Bradbury Building. Inside, the
+                    walls were made out of orange brick, the floor was tile, and the pillars
+                    and fences were ornate black metal. The team presenting on this building
+                    mentioned that there were pneumatic tubes and chutes used to shoot mail
+                    around the building.
+                </p>
+                
+                <p>
+                    What was most interesting to me was the feeling of being outside even
+                    though we were inside. If it were nighttime and I didn't look towards the
+                    ceiling, I could have imagined that I was in the streets and alleys of some
+                    Victorian city.
+                </p>
+                
+                <p>
+                    It was one thing to use and interact with a program I wrote, but it was a
+                    different experience entirely to stand inside and walk through a build like
+                    this. A space could be designed not just for practicalities but to
+                    cultivate a specific experience. Again, it took both creative design and
+                    engineering to get the space to work and get built.
+                </p>                
+
+                <ScrollAnchor>
+                    <h2>Grand Central Market</h2>
+                </ScrollAnchor>
+
+                <p>
+                    With all presentations complete, we returned to Grand Central Market to eat
+                    lunch, which contained scores of restaurants. I liked to think I didn't get
+                    stuck on small decisions like this, but I remember standing there for at
+                    least two or three minutes, my mind running in circles deciding what I
+                    should eat.
+                </p>
+
+                <p>
+                    "Having a hard time choosing what to eat?" my teacher asked. I nodded. "We
+                    call that the paralysis of choice", he said and smiled knowingly.
+                </p>
+
+                <p>
+                    Eventually I decided to eat from a taco place. They were a bit too spicy
+                    for me but otherwise tasted great. The next time we visited, I ate from a
+                        sandwich place which had a delicious perfectly crunchy-and-moist bread.
+                </p>
+
+                <p>
+                    Eating lunch at Grand Central Market was completely extra -- it had nothing
+                    to do with the architecture we were studying and our teacher could just
+                    have easily told us to bring lunches or eat school lunches. But he did so
+                    for our benefit. The activities we would do in CEA class were not solely
+                        for education, on the contrary a lot of care was put into making them
+                            fun as well.
+                </p>
+
+                <ScrollAnchor>
+                    <h2>The Last Bookstore</h2>
+                </ScrollAnchor>
+
+                <p>
+                    Finally, before we headed back to school, we stopped at a bookstore called
+                    The Last Bookstore. The first floor was fairly normal, albeit more cozy and
+                    with a wider selection than a typical bookstore. However, the second floor
+                    was quite whimsical. There was a tunnel of books, a collection of books and
+                    other writing implements suspended from wires as if magically animated, a
+                    cartoon vault with decorative plastic buzz saws and other security
+                    measures, and set of labyrinthine shelves that rejected the notion of an
+                    organized grid. It was one last quite creative and remarkable construction
+                    for us to see.
                 </p>
             </ScrollContainer>
         </div>
@@ -199,6 +288,7 @@
     .center-column {
         width: 50%;
         margin: auto;
+        min-height: 100dvh;
     }
 
     .scroll-container {
@@ -206,7 +296,7 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .header {
+    h2 {
         padding: 8em 0;
         text-align: center;
         margin: 4em 0 1em;
