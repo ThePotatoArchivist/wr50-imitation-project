@@ -16,3 +16,4 @@ export const [
 export type Map = InstanceType<typeof Map>
 export type StreetViewPanorama = InstanceType<typeof StreetViewPanorama>
 export type LatLngLiteral = google.maps.LatLngLiteral
+export type StreetViewPov = google.maps.StreetViewPov
