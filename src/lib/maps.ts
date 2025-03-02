@@ -5,14 +5,19 @@ const loader = new Loader({
     version: 'weekly',
 })
 
-export const [{ Map }, { StreetViewPanorama }] = await Promise.all([
+export const [{ Map, Polyline, MapTypeId }, { StreetViewPanorama }, { AdvancedMarkerElement, PinElement }] = await Promise.all([
     loader.importLibrary('maps'),
     loader.importLibrary('streetView'),
+    loader.importLibrary('marker'),
 ])
 
 export type Map = InstanceType<typeof Map>
+export type Polyline = InstanceType<typeof Polyline>
 export type StreetViewPanorama = InstanceType<typeof StreetViewPanorama>
+export type AdvancedMarkerElement = InstanceType<typeof AdvancedMarkerElement>
+export type PinElement = InstanceType<typeof PinElement>
 
 export type LatLngLiteral = google.maps.LatLngLiteral
 export type StreetViewPov = google.maps.StreetViewPov
 export type StreetViewPanoramaOptions = google.maps.StreetViewPanoramaOptions
+export type MapOptions = google.maps.MapOptions

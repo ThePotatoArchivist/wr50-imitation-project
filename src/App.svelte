@@ -1,12 +1,14 @@
 <script lang="ts">
-    import type { LatLngLiteral, StreetViewPov } from './lib/maps'
+    import { MapTypeId, type LatLngLiteral, type StreetViewPov } from './lib/maps'
+    import PathMap from './lib/PathMap.svelte'
     import ScrollAnchor from './lib/ScrollAnchor.svelte'
     import ScrollContainer from './lib/ScrollContainer.svelte'
     import SmallScreenNotice from './lib/SmallScreenNotice.svelte'
     import StreetviewMap from './lib/StreetviewMap.svelte'
     import TypedDoc from './lib/TypedDoc.svelte'
+    import { lerpCoords } from './lib/util'
 
-    const locations: {
+    const streetViewLocations: {
         position: LatLngLiteral
         pov: StreetViewPov
     }[] = [
@@ -49,10 +51,57 @@
             pov: { heading: 51.7, pitch: 12.33 },
         },
     ]
+    
+    const mapLocations: ({
+        title: string
+    } & LatLngLiteral)[] = [
+        {
+        // 34.05188821540468, -118.2505472486012
+            title: 'Angels Flight Railway',
+            lat: 34.0518882,
+            lng: -118.2505472,
+        },
+        {
+        // 34.05571054164019, -118.2499461767449
+            title: 'Disney Concert Hall',
+            lat: 34.0557105,
+            lng: -118.2499462
+        },
+        {
+            // 34.05658151600942, -118.24672724996705
+            title: 'Gloria Molina Park',
+            lat: 34.0565815,
+            lng: -118.2467272
+        },
+        {
+            // 34.05128323545229, -118.24318724210585
+            title: 'Caltrans District 7 Headquarters',
+            lat: 34.0512832,
+            lng: -118.2431872,
+        },
+        {
+            // 34.05103471205276, -118.24777926559135
+            title: 'Bradbury Building',
+            lat: 34.0510347,
+            lng: -118.2477793,
+        },
+        {
+            // 34.0513192446412, -118.24915253444394
+            title: 'Grand Central Market',
+            lat: 34.0513192,
+            lng: -118.2491525,
+        },
+        {
+            // 34.04806583860772, -118.24996812591691
+            title: 'The Last Bookstore',
+            lat: 34.0480658,
+            lng: -118.2499681,
+        }
+    ]
 
     let progress: number = $state(0)
 
-    let location = $derived(locations[Math.max(Math.ceil(progress) - 1, 0)])
+    let location = $derived(streetViewLocations[Math.ceil(progress)])
 </script>
 
 <main>
@@ -364,8 +413,18 @@
             </ScrollContainer>
         </div>
 
-        <div class="map-container">
+        <div class="map-container ">
             <div class="map-container-inner">
+                <!--34.05352359399543, -118.24636278711354-->
+                <PathMap
+                    center={{ lat: 34.0535236, lng: -118.2463628 }} 
+                    zoom={16} 
+                    locations={mapLocations}
+                    bind:progress
+                    disableDefaultUI
+                    draggable={false}
+                    mapTypeId={MapTypeId.SATELLITE}
+                    mapId='MAP' />
                 <StreetviewMap
                     {...location}
                     zoomControl={false}
@@ -750,6 +809,7 @@
         position: sticky;
         top: 0;
         display: grid;
+        grid-template-rows: 1fr 2fr;
     }
 
     .container {

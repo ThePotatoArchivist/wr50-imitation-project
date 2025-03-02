@@ -35,8 +35,6 @@
         })
 
         map.setStreetView(panorama)
-
-        return () => {}
     })
 
     $effect(() => {
