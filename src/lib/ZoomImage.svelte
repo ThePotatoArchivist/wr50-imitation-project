@@ -54,7 +54,7 @@
         position: fixed;
         inset: 0;
         z-index: 20;
-        padding: 8em;
+        padding: 4em;
         display: grid;
         place-items: center;
     }
