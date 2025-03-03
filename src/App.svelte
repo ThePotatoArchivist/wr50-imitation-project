@@ -6,6 +6,7 @@
     import SmallScreenNotice from './lib/SmallScreenNotice.svelte'
     import StreetviewMap from './lib/StreetviewMap.svelte'
     import TypedDoc from './lib/TypedDoc.svelte'
+    import ZoomImage from './lib/ZoomImage.svelte'
     import {
         MAP_CENTER,
         MAP_LOCATIONS,
@@ -49,12 +50,14 @@
         </p>
 
         <div class="columns">
-            <img
+            <ZoomImage
                 src="/images/general_1.jpg"
                 alt="Skyscrapers past an intersection" />
 
-            <img src="/images/general_2.jpg" alt="Tall, cubical buildings" />
+            <ZoomImage src="/images/general_2.jpg" alt="Tall, cubical buildings" />
         </div>
+        
+        <div class="note">Feel free to explore in street view</div>
     </div>
 
     <div class="scroll-layout">
@@ -131,10 +134,10 @@
                         looked like a building, more like an enormous sculpture.
                     </p>
                     <div class="columns">
-                        <img
+                        <ZoomImage
                             src="/images/disney_concert_hall_1.jpg"
                             alt="Close front view of the concert hall" />
-                        <img
+                        <ZoomImage
                             src="/images/disney_concert_hall_2.jpg"
                             alt="Slightly further away front view of the concert hall showiing doors and stairs" />
                     </div>
@@ -144,10 +147,10 @@
                         fountain and a pretty view of more of the city.
                     </p>
                     <div class="columns">
-                        <img
+                        <ZoomImage
                             src="/images/disney_concert_hall_3.jpg"
                             alt="Path through a garden" />
-                        <img
+                        <ZoomImage
                             src="/images/disney_concert_hall_5.jpg"
                             alt="Balcony view of the skyline" />
                     </div>
@@ -178,10 +181,10 @@
                         <h2>Interlude: Gloria Molina Park</h2>
                     </ScrollAnchor>
                     <div class="columns">
-                        <img
+                        <ZoomImage
                             src="/images/gloria_molina_1.jpg"
                             alt="Walking down the center of the park" />
-                        <img
+                        <ZoomImage
                             src="/images/gloria_molina_2.jpg"
                             alt="The park fountain" />
                     </div>
@@ -220,10 +223,10 @@
                         overlapping horizontal pipe structures.
                     </p>
                     <div class="columns">
-                        <img
+                        <ZoomImage
                             src="/images/caltrans_1.jpg"
                             alt="View of side of Caltrans" />
-                        <img
+                        <ZoomImage
                             src="/images/caltrans_2.jpg"
                             alt="View of side of caltrans" />
                     </div>
@@ -240,7 +243,7 @@
                         freeway.
                     </p>
                     <div class="columns">
-                        <img
+                        <ZoomImage
                             src="/images/caltrans_3.jpg"
                             alt="Courtyard showing Motordom" />
                     </div>
@@ -282,7 +285,7 @@
                     </p>
 
                     <div class="columns">
-                        <img
+                        <ZoomImage
                             src="/images/bradbury.jpg"
                             alt="Inside of the Bradbury Building" />
                     </div>
@@ -328,10 +331,10 @@
                         had a delicious perfectly crunchy bread.
                     </p>
                     <div class="columns">
-                        <img
+                        <ZoomImage
                             src="/images/grand_central_market_1.jpg"
                             alt="Right outside the Market looking through door" />
-                        <img
+                        <ZoomImage
                             src="/images/grand_central_market_2.jpg"
                             alt="Looking down aisle of food stands" />
                     </div>
@@ -365,7 +368,7 @@
                         to see.
                     </p>
                     <div class="columns">
-                        <img
+                        <ZoomImage
                             src="/images/last_bookstore.jpg"
                             alt="Entrance to the bookstore" />
                     </div>
@@ -850,15 +853,15 @@
         text-align: left;
     }
 
-    .columns img {
+    .columns :global(.zoom-image) {
         width: 100%;
     }
 
-    .columns img:only-child {
+    .columns :global(.zoom-image):only-of-type {
         width: 50%;
     }
 
-    img {
+    :global(.zoom-image) {
         border-radius: 1em;
     }
 
@@ -905,5 +908,10 @@
     .scroll-content :global(.document) {
         max-width: 80%;
         margin: 2em auto;
+    }
+    
+    .note {
+        font-style: italic;
+        text-align: center;
     }
 </style>
