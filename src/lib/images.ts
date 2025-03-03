@@ -13,3 +13,4 @@ export { default as gloria_molina_2 } from '../assets/images/gloria_molina_2.jpg
 export { default as grand_central_market_1 } from '../assets/images/grand_central_market_1.jpg'
 export { default as grand_central_market_2 } from '../assets/images/grand_central_market_2.jpg'
 export { default as last_bookstore } from '../assets/images/last_bookstore.jpg'
+export { default as general_3 } from '../assets/images/general_3.jpg'
