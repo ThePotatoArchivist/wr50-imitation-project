@@ -124,6 +124,7 @@
     }
 
     :global(.marker-title) {
+        font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
         display: none;
         position: absolute;
         bottom: 150%;
@@ -131,6 +132,9 @@
         width: max-content;
         translate: -50% 0;
         font-size: 1.5em;
+        background-color: #fffb;
+        padding: 0.2em;
+        border-radius: 0.2em;
     }
 
     :global(.map-marker:hover .marker-title) {
