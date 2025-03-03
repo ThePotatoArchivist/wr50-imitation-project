@@ -10,6 +10,11 @@
     } = $props()
     
     let opened = $state(false)
+    
+    function onclickOverlay(event: MouseEvent) {
+        if (event.target === event.currentTarget)
+            opened = false
+    }
 </script>
 
 <button onclick={() => opened = true} class="zoom-image">
@@ -19,7 +24,7 @@
 {#if opened}
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <!-- svelte-ignore a11y_no_static_element_interactions -->
-    <div class="overlay" onclick={() => opened = false}>
+    <div class="overlay" onclick={onclickOverlay}>
         <img {src} {alt} />
         <XButton onclick={() => opened = false} --x-button-offset=2em --x-button-size=2em />
     </div>

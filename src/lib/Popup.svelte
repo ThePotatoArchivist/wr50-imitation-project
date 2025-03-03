@@ -11,6 +11,11 @@
     } = $props()
     
     let opened = $state(false)
+    
+    function onclickOverlay(event: MouseEvent) {
+        if (event.target === event.currentTarget)
+            opened = false
+    }
 </script>
 
 {@render button(() => opened = true)}
@@ -18,7 +23,7 @@
 {#if opened}
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <!-- svelte-ignore a11y_no_static_element_interactions -->
-    <div class="overlay" onclick={() => opened = false}>
+    <div class="overlay" onclick={onclickOverlay}>
         <div class="popup">
             {@render children()}
         </div>
