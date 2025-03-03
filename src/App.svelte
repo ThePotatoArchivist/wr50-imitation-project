@@ -449,8 +449,8 @@
             <div class="map-container-inner">
                 <!--34.05352359399543, -118.24636278711354-->
                 <PathMap
-                    center={{ lat: 34.0535236, lng: -118.2463628 }}
-                    zoom={16}
+                    center={{ lat: 34.0525236, lng: -118.2463628 }}
+                    zoom={15}
                     locations={mapLocations}
                     bind:progress
                     disableDefaultUI
@@ -841,7 +841,7 @@
         position: sticky;
         top: 0;
         display: grid;
-        grid-template-rows: 2fr 3fr;
+        grid-template-rows: 2fr 5fr;
     }
 
     .container {
