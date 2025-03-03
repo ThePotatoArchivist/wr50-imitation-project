@@ -441,7 +441,7 @@
             projects a lot since the end of high school. I feel that creative
             and physical projects are still something I want to invest in for my
             long-term fulfillment. This project shall serve as a reminder to my
-            present and future self&emdash;don't forget to be creative and build.
+            present and future self&mdash;don't forget to be creative and build.
         </p>
 
         <details>
