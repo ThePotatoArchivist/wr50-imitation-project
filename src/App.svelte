@@ -792,7 +792,7 @@
     }
 
     h2 {
-        padding: 12rem 0;
+        padding: 8rem 4rem;
         text-align: center;
         margin: 1rem 0;
         border-radius: 1rem;
@@ -809,9 +809,17 @@
         content: '';
         position: absolute;
         box-sizing: border-box;
-        width: 8rem;
-        height: 8rem;
         border: 1rem solid white;
+    }
+
+    h1::before, h1::after {
+        width: 9rem;
+        height: 9rem;
+    }
+    
+    h2::before, h2::after {
+        width: 7rem;
+        height: 7rem;
     }
 
     h2::before, h1::before {
@@ -882,7 +890,7 @@
         backdrop-filter: blur(16px);
         padding: 8rem 2rem;
         border-radius: 2rem;
-        margin: 0 2rem;
+        margin: 0 4rem;
         text-align: center;
         font-size: 4em;
         text-transform: uppercase;
