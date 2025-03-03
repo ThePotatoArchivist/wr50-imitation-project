@@ -12,6 +12,7 @@
         MAP_LOCATIONS,
         STREET_VIEW_LOCATIONS,
     } from './locations'
+    import * as images from './lib/images'
 
     let progress: number = $state(0)
 
@@ -51,10 +52,10 @@
 
         <div class="columns">
             <ZoomImage
-                src="/images/general_1.jpg"
+                src={images.general_1}
                 alt="Skyscrapers past an intersection" />
 
-            <ZoomImage src="/images/general_2.jpg" alt="Tall, cubical buildings" />
+            <ZoomImage src={images.general_2} alt="Tall, cubical buildings" />
         </div>
         
         <div class="note">Feel free to explore in street view</div>
@@ -135,10 +136,10 @@
                     </p>
                     <div class="columns">
                         <ZoomImage
-                            src="/images/disney_concert_hall_1.jpg"
+                            src={images.disney_concert_hall_1}
                             alt="Close front view of the concert hall" />
                         <ZoomImage
-                            src="/images/disney_concert_hall_2.jpg"
+                            src={images.disney_concert_hall_2}
                             alt="Slightly further away front view of the concert hall showiing doors and stairs" />
                     </div>
                     <p>
@@ -148,10 +149,10 @@
                     </p>
                     <div class="columns">
                         <ZoomImage
-                            src="/images/disney_concert_hall_3.jpg"
+                            src={images.disney_concert_hall_3}
                             alt="Path through a garden" />
                         <ZoomImage
-                            src="/images/disney_concert_hall_5.jpg"
+                            src={images.disney_concert_hall_5}
                             alt="Balcony view of the skyline" />
                     </div>
                     <p>
@@ -182,10 +183,10 @@
                     </ScrollAnchor>
                     <div class="columns">
                         <ZoomImage
-                            src="/images/gloria_molina_1.jpg"
+                            src={images.gloria_molina_1}
                             alt="Walking down the center of the park" />
                         <ZoomImage
-                            src="/images/gloria_molina_2.jpg"
+                            src={images.gloria_molina_2}
                             alt="The park fountain" />
                     </div>
                     <p>
@@ -224,10 +225,10 @@
                     </p>
                     <div class="columns">
                         <ZoomImage
-                            src="/images/caltrans_1.jpg"
+                            src={images.caltrans_1}
                             alt="View of side of Caltrans" />
                         <ZoomImage
-                            src="/images/caltrans_2.jpg"
+                            src={images.caltrans_2}
                             alt="View of side of caltrans" />
                     </div>
                     <p>
@@ -244,7 +245,7 @@
                     </p>
                     <div class="columns">
                         <ZoomImage
-                            src="/images/caltrans_3.jpg"
+                            src={images.caltrans_3}
                             alt="Courtyard showing Motordom" />
                     </div>
                     <p>
@@ -286,7 +287,7 @@
 
                     <div class="columns">
                         <ZoomImage
-                            src="/images/bradbury.jpg"
+                            src={images.bradbury}
                             alt="Inside of the Bradbury Building" />
                     </div>
                     <p>
@@ -332,10 +333,10 @@
                     </p>
                     <div class="columns">
                         <ZoomImage
-                            src="/images/grand_central_market_1.jpg"
+                            src={images.grand_central_market_1}
                             alt="Right outside the Market looking through door" />
                         <ZoomImage
-                            src="/images/grand_central_market_2.jpg"
+                            src={images.grand_central_market_2}
                             alt="Looking down aisle of food stands" />
                     </div>
                     <p>
@@ -369,7 +370,7 @@
                     </p>
                     <div class="columns">
                         <ZoomImage
-                            src="/images/last_bookstore.jpg"
+                            src={images.last_bookstore}
                             alt="Entrance to the bookstore" />
                     </div>
                 </div>
