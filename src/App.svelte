@@ -58,9 +58,9 @@
 
             <ZoomImage src={images.general_2} alt="Tall, cubical buildings" />
         </div>
-        
-        <div class="note">Feel free to explore in street view</div>
     </div>
+
+    <div class="note">Drag to look around in street view<br>Feel free to explore</div>
 
     <div class="scroll-layout">
         <div class="scroll-content">
@@ -212,7 +212,7 @@
                         depending on the temperature and sunlight. It has
                         skip-stop elevators to conserve energy and speed up
                         circulation by encouraging employees to take the stairs.
-                        The light instalation is titled Motordom and was
+                        The light installation is titled Motordom and was
                         designed by Keith Sonnier.
                     </TypedDoc>
                     <p>
@@ -266,7 +266,7 @@
 
                     <TypedDoc>
                         The Bradbury Building was created as the last building
-                        of Lewis Bradbury, a gold-mining millionare. It was
+                        of Lewis Bradbury, a gold-mining millionaire. It was
                         designed by George Wynman, a draftsman who had no
                         architectural training, and he was inspired by a
                         commercial building in the 1887 Science Fiction Story
@@ -412,9 +412,9 @@
         <p>"Yeah, so am I man. It's pretty nice."</p>
         <p>
             And he was correct. This field trip had showed me two lessons. 1)
-            There are somre really cool and interesting things you can do with
+            There are some really cool and interesting things you can do with
             architecture, and creative projects as a whole, including in tandem
-            with technical discliplines. 2) This class was about more than just
+            with technical disciplines. 2) This class was about more than just
             learning architecture. It was about growing together and caring
             about what we make.
         </p>
@@ -940,7 +940,7 @@
         padding: 2rem;
         background-color: #2f2f3d;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.25s;
         border-radius: 2rem;
         border: none;
         text-align: center;
@@ -949,6 +949,10 @@
     }
     
     button:hover {
-        filter: brightness(1.1);
+        filter: brightness(1.2);
+    }
+    
+    button:active {
+        filter: none;
     }
 </style>

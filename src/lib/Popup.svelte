@@ -21,8 +21,8 @@
     <div class="overlay" onclick={() => opened = false}>
         <div class="popup">
             {@render children()}
-            <XButton onclick={() => opened = false} --x-button-offset=4em --x-button-size=2em />
         </div>
+        <XButton onclick={() => opened = false} --x-button-offset=2em --x-button-size=2em fixed />
     </div>
 {/if}
 

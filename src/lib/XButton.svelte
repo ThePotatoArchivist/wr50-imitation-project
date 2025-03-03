@@ -3,12 +3,14 @@
 
     let {
         onclick,
+        fixed = false,
     }: {
-        onclick?: MouseEventHandler<HTMLButtonElement>
+        onclick?: MouseEventHandler<HTMLButtonElement>,
+        fixed?: boolean
     } = $props()
 </script>
 
-<button aria-label="close" class="close" {onclick}></button>
+<button aria-label="close" class="close" class:fixed {onclick}></button>
 
 <style>
     :root {
@@ -26,6 +28,10 @@
         padding: 0;
         border: none;
         background-color: transparent;
+    }
+    
+    .fixed {
+        position: fixed;
     }
 
     .close::before,
