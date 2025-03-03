@@ -868,7 +868,7 @@
     }
 
     .header {
-        background-image: url('/images/general_1.jpg');
+        background-image: url('./assets/images/general_1.jpg');
         background-size: cover;
         height: 100dvh;
         display: grid;
