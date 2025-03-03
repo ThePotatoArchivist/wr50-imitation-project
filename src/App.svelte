@@ -1,5 +1,9 @@
 <script lang="ts">
-    import { MapTypeId, type LatLngLiteral, type StreetViewPov } from './lib/maps'
+    import {
+        MapTypeId,
+        type LatLngLiteral,
+        type StreetViewPov,
+    } from './lib/maps'
     import PathMap from './lib/PathMap.svelte'
     import ScrollAnchor from './lib/ScrollAnchor.svelte'
     import ScrollContainer from './lib/ScrollContainer.svelte'
@@ -51,27 +55,27 @@
             pov: { heading: 51.7, pitch: 12.33 },
         },
     ]
-    
+
     const mapLocations: ({
         title: string
     } & LatLngLiteral)[] = [
         {
-        // 34.05188821540468, -118.2505472486012
+            // 34.05188821540468, -118.2505472486012
             title: 'Angels Flight Railway',
             lat: 34.0518882,
             lng: -118.2505472,
         },
         {
-        // 34.05571054164019, -118.2499461767449
+            // 34.05571054164019, -118.2499461767449
             title: 'Disney Concert Hall',
             lat: 34.0557105,
-            lng: -118.2499462
+            lng: -118.2499462,
         },
         {
             // 34.05658151600942, -118.24672724996705
             title: 'Gloria Molina Park',
             lat: 34.0565815,
-            lng: -118.2467272
+            lng: -118.2467272,
         },
         {
             // 34.05128323545229, -118.24318724210585
@@ -96,7 +100,7 @@
             title: 'The Last Bookstore',
             lat: 34.0480658,
             lng: -118.2499681,
-        }
+        },
     ]
 
     let progress: number = $state(0)
@@ -130,9 +134,11 @@
             that plagued me in History. But my mind began to change with our
             architecture field trip to Downtown Los Angeles.
         </p>
-        
-        <img src="/images/general_1.jpg" alt="Skyscrapers past an intersection" />
-        
+
+        <img
+            src="/images/general_1.jpg"
+            alt="Skyscrapers past an intersection" />
+
         <img src="/images/general_2.jpg" alt="Tall, cubical buildings" />
     </div>
 
@@ -174,7 +180,7 @@
                     he was willing to help me out. "Oh- thank you!" I said. We
                     then boarded the train to ascend the hill.
                 </p>
-                
+
                 <ScrollAnchor>
                     <h2>Walt Disney Concert Hall</h2>
                 </ScrollAnchor>
@@ -207,19 +213,27 @@
                     panels. It hardly looked like a building, more like an
                     enormous sculpture.
                 </p>
-                
-                <img src="/images/disney_concert_hall_1.jpg" alt="Close front view of the concert hall" />
-                <img src="/images/disney_concert_hall_2.jpg" alt="Slightly further away front view of the concert hall showiing doors and stairs" />
-                
+
+                <img
+                    src="/images/disney_concert_hall_1.jpg"
+                    alt="Close front view of the concert hall" />
+                <img
+                    src="/images/disney_concert_hall_2.jpg"
+                    alt="Slightly further away front view of the concert hall showiing doors and stairs" />
+
                 <p>
                     We took a group picture, then went around the back and found
                     a nice garden with a multilayered rose-shaped fountain and a
                     pretty view of more of the city.
                 </p>
-                
-                <img src="/images/disney_concert_hall_3.jpg" alt="Path through a garden" />
-                <img src="/images/disney_concert_hall_5.jpg" alt="Balcony view of the skyline" />
-                
+
+                <img
+                    src="/images/disney_concert_hall_3.jpg"
+                    alt="Path through a garden" />
+                <img
+                    src="/images/disney_concert_hall_5.jpg"
+                    alt="Balcony view of the skyline" />
+
                 <p>
                     The buildings prior had been interesting, sure, but the
                     Concert Hall blew me away. I had never thought too much
@@ -240,16 +254,21 @@
                     me that I didn't have to pigeonhole myself into purely
                     technical projects.
                 </p>
-                
+
                 <ScrollAnchor>
                     <h2>Interlude: Gloria Molina Park</h2>
                 </ScrollAnchor>
-                
-                <img src="/images/gloria_molina_1.jpg" alt="Walking down the center of the park" />
-                <img src="/images/gloria_molina_2.jpg" alt="The park fountain" />
-                
+
+                <img
+                    src="/images/gloria_molina_1.jpg"
+                    alt="Walking down the center of the park" />
+                <img
+                    src="/images/gloria_molina_2.jpg"
+                    alt="The park fountain" />
+
                 <p>
-                    At first I thought it was a huge pool but it's actually a thin layer of water over the ground than you can walk on.
+                    At first I thought it was a huge pool but it's actually a
+                    thin layer of water over the ground than you can walk on.
                 </p>
 
                 <ScrollAnchor>
@@ -280,10 +299,14 @@
                     Other sides were more textured, with overlapping horizontal
                     pipe structures.
                 </p>
-                
-                <img src="/images/caltrans_1.jpg" alt="Balcony view of the skyline" />
-                <img src="/images/caltrans_2.jpg" alt="Balcony view of the skyline" />
-                
+
+                <img
+                    src="/images/caltrans_1.jpg"
+                    alt="Balcony view of the skyline" />
+                <img
+                    src="/images/caltrans_2.jpg"
+                    alt="Balcony view of the skyline" />
+
                 <p>
                     My team was assigned to this building. I was a bit nervous
                     about my part of the presentation, but my school gives us a
@@ -295,7 +318,9 @@
                     "Motordom" designed to evoke cars rushing by on a freeway.
                 </p>
 
-                <img src="/images/caltrans_3.jpg" alt="Balcony view of the skyline" />
+                <img
+                    src="/images/caltrans_3.jpg"
+                    alt="Balcony view of the skyline" />
 
                 <p>
                     After our team finished presenting, I realized that I had
@@ -332,8 +357,10 @@
                     that there were pneumatic tubes and chutes used to shoot
                     mail around the building.
                 </p>
-                
-                <img src="/images/bradbury.jpg" alt="Inside of the Bradbury Building" />
+
+                <img
+                    src="/images/bradbury.jpg"
+                    alt="Inside of the Bradbury Building" />
 
                 <p>
                     What was most interesting to me was the feeling of being
@@ -376,9 +403,13 @@
                     time we visited, I ate from a sandwich place which had a
                     delicious perfectly crunchy bread.
                 </p>
-                
-                <img src="/images/grand_central_market_1.jpg" alt="Right outside the Market looking through door" />
-                <img src="/images/grand_central_market_2.jpg" alt="Looking down aisle of food stands" />
+
+                <img
+                    src="/images/grand_central_market_1.jpg"
+                    alt="Right outside the Market looking through door" />
+                <img
+                    src="/images/grand_central_market_2.jpg"
+                    alt="Looking down aisle of food stands" />
 
                 <p>
                     Eating lunch at Grand Central Market was completely
@@ -407,26 +438,26 @@
                     organized grid. It was one last quite creative and
                     remarkable construction for us to see.
                 </p>
-                
-                <img src="/images/last_bookstore.jpg" alt="Entrance to the bookstore" />
 
+                <img
+                    src="/images/last_bookstore.jpg"
+                    alt="Entrance to the bookstore" />
             </ScrollContainer>
         </div>
 
-        <div class="map-container ">
+        <div class="map-container">
             <div class="map-container-inner">
                 <!--34.05352359399543, -118.24636278711354-->
                 <PathMap
-                    center={{ lat: 34.0535236, lng: -118.2463628 }} 
-                    zoom={16} 
+                    center={{ lat: 34.0535236, lng: -118.2463628 }}
+                    zoom={16}
                     locations={mapLocations}
                     bind:progress
                     disableDefaultUI
                     draggable={false}
-                    mapTypeId={MapTypeId.SATELLITE}
-                    mapId='MAP'
-                    pathColor='blue'
-                    currentLocationColor='orange' />
+                    mapId="MAP"
+                    pathColor="#444"
+                    currentLocationColor="#ff0" />
                 <StreetviewMap
                     {...location}
                     zoomControl={false}
@@ -527,27 +558,25 @@
             The text deals with the travel writing conventions of self-growth
             and author subjectivity. The DTLA trip was a turning point in my CEA
             journey, which affected my personal growth as a whole. Like Teju
-            Cole, I tried to include a description of what happened <em>and</em> a
-            personal reflection at each destination, to show the progress
-            towards my conclusion. For example, at the Disney Concert Hall, I
-            described the architecture and our activities there, then discussed
-            my internal reflections on creative and technical skills. I wanted
-            to make sure all the parts of my conclusion about creativity and
-            motivation were built up throughout the piece, so that the reader
-            can come to the conclusion at the same time as I do in the writing.
-            The piece also involved author subjectivity, as my memory is not the
-            best and there were details I had to make a best guess as to what
-            happened, such as the dialogue. Most of the dialogue, including my
-            conversation with my teacher at the Grand Central Market and with my
-            friend at the end, is somewhat paraphrased, although I transcribed
-            it as best as I can remember. I wrote it as dialogue anyway, in
-            order to make the experience seem more vivid and in-the-present to
-            the reader. Also, I tried to make my reflections and realizations
-            based on real memories, but some had to be embellished for the sake
-            of flow. For example, I did not have those thoughts from the Disney
-            Concert Hall as clearly as I write them down. Much of it was
-            developed and cultivated in the class throughout the next few
-            months.
+            Cole, I tried to include a description of what happened <em>and</em>
+            a personal reflection at each destination, to show the progress towards
+            my conclusion. For example, at the Disney Concert Hall, I described the
+            architecture and our activities there, then discussed my internal reflections
+            on creative and technical skills. I wanted to make sure all the parts
+            of my conclusion about creativity and motivation were built up throughout
+            the piece, so that the reader can come to the conclusion at the same
+            time as I do in the writing. The piece also involved author subjectivity,
+            as my memory is not the best and there were details I had to make a best
+            guess as to what happened, such as the dialogue. Most of the dialogue,
+            including my conversation with my teacher at the Grand Central Market
+            and with my friend at the end, is somewhat paraphrased, although I transcribed
+            it as best as I can remember. I wrote it as dialogue anyway, in order
+            to make the experience seem more vivid and in-the-present to the reader.
+            Also, I tried to make my reflections and realizations based on real memories,
+            but some had to be embellished for the sake of flow. For example, I did
+            not have those thoughts from the Disney Concert Hall as clearly as I
+            write them down. Much of it was developed and cultivated in the class
+            throughout the next few months.
         </p>
 
         <p>
@@ -561,13 +590,14 @@
             reader with context and a more complete understanding of the
             building I was discussing, as well as to prove my credibility to the
             reader by showing that I have done this background research. This is
-            an appeal that falls under <em>logos</em> and <em>ethos</em>. Finally, I wrote the
-            text in the reflective, serious tone of contemporary travel authors
-            to emphasize my self-growth on the journey. It shows I am sincere
-            and carefully consider what I learned from the experience, and
-            hopefully inspires them to value and try out creative projects as
-            well. This is an appeal that falls under <em>pathos</em>, since the growth
-            I describe is a value and not a logical or ethical argument.
+            an appeal that falls under <em>logos</em> and <em>ethos</em>.
+            Finally, I wrote the text in the reflective, serious tone of
+            contemporary travel authors to emphasize my self-growth on the
+            journey. It shows I am sincere and carefully consider what I learned
+            from the experience, and hopefully inspires them to value and try
+            out creative projects as well. This is an appeal that falls under
+            <em>pathos</em>, since the growth I describe is a value and not a
+            logical or ethical argument.
         </p>
 
         <p>
@@ -811,17 +841,17 @@
         position: sticky;
         top: 0;
         display: grid;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: 2fr 3fr;
     }
 
     .container {
         padding: 2em;
     }
-    
+
     .citation {
         text-indent: 2em hanging;
     }
-    
+
     img {
         width: 100%;
     }

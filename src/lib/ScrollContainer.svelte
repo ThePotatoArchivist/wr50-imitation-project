@@ -17,7 +17,7 @@
         children: Snippet
         anchor?: AnchorBehavior
     } = $props()
-    
+
     let lastProgress = $state(progress)
     let jumping = $state(false)
 
@@ -53,15 +53,20 @@
         progress = getProgress()
         lastProgress = progress
     }
-    
+
     $effect(() => {
         if (progress === lastProgress) return
-        $anchors[Math.floor(progress)].scrollIntoView({behavior: 'smooth', block: 'start'})
+        $anchors[Math.floor(progress)].scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        })
         jumping = true
         lastProgress = progress
     })
 </script>
 
-<svelte:window onscroll={onscrollWindow} onscrollend={() => jumping = false} />
+<svelte:window
+    onscroll={onscrollWindow}
+    onscrollend={() => (jumping = false)} />
 
 {@render children()}
