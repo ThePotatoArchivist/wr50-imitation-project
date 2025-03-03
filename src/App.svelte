@@ -20,7 +20,7 @@
 
 <main>
     <div class="header">
-        <h1>My Trip to Downtown LA</h1>
+        <h1>A TITLE</h1>
     </div>
 
     <div class="center-column">
@@ -440,7 +440,7 @@
             projects a lot since the end of high school. I feel that creative
             and physical projects are still something I want to invest in for my
             long-term fulfillment. This project shall serve as a reminder to my
-            present and future self - don't forget to be creative and build.
+            present and future self&emdash;don't forget to be creative and build.
         </p>
 
         <details>
@@ -791,19 +791,20 @@
     }
 
     h2 {
-        padding: 8em 0;
+        padding: 12rem 0;
         text-align: center;
-        margin: 1em 0;
-        border-radius: 1em;
+        margin: 1rem 0;
+        border-radius: 1rem;
         background-color: #2f2f3d;
         position: relative;
+        font-size: 2.5em;
     }
 
     h2:first-child {
         margin-top: 0;
     }
     
-    h2::before, h2::after {
+    h2::before, h2::after, h1::before, h1::after {
         content: '';
         position: absolute;
         box-sizing: border-box;
@@ -812,14 +813,14 @@
         border: 1rem solid white;
     }
 
-    h2::before {
+    h2::before, h1::before {
         top: 2rem;
         left: 2rem;
         border-bottom-color: transparent;
         border-right-color: transparent;
     }
 
-    h2::after {
+    h2::after, h1::after {
         bottom: 2rem;
         right: 2rem;
         border-top-color: transparent;
@@ -874,15 +875,17 @@
     }
 
     h1 {
-        background-color: #fff7;
-        color: black;
+        display: block;
+        background-color: #24242ecf;
+        color: white;
         backdrop-filter: blur(16px);
-        padding: 2rem 0;
+        padding: 8rem 2rem;
         border-radius: 2rem;
         margin: 0 2rem;
         text-align: center;
         font-size: 4em;
         text-transform: uppercase;
+        font-weight: 500;
     }
 
     p {
