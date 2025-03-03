@@ -10,7 +10,7 @@
     } from './maps'
     import { onMount } from 'svelte'
     import { lerpCoords } from './util'
-    import { minimal } from './mapStyle'
+    import { MINIMAL } from './mapStyle'
 
     let {
         zoom,
@@ -70,7 +70,7 @@
             ...otherOptions,
         })
 
-        map.mapTypes.set('minimal', minimal)
+        map.mapTypes.set('minimal', MINIMAL)
         map.setMapTypeId('minimal')
 
         markers = locations.map((location, index) => {

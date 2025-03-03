@@ -12,7 +12,7 @@
     import TypedDoc from './lib/TypedDoc.svelte'
     import { lerpCoords } from './lib/util'
 
-    const streetViewLocations: {
+    const STREET_VIEW_LOCATIONS: {
         position: LatLngLiteral
         pov: StreetViewPov
     }[] = [
@@ -56,7 +56,7 @@
         },
     ]
 
-    const mapLocations: ({
+    const MAP_LOCATIONS: ({
         title: string
     } & LatLngLiteral)[] = [
         {
@@ -105,7 +105,7 @@
 
     let progress: number = $state(0)
 
-    let location = $derived(streetViewLocations[Math.ceil(progress)])
+    let location = $derived(STREET_VIEW_LOCATIONS[Math.ceil(progress)])
 </script>
 
 <main>
@@ -451,7 +451,7 @@
                 <PathMap
                     center={{ lat: 34.0525236, lng: -118.2463628 }}
                     zoom={15}
-                    locations={mapLocations}
+                    locations={MAP_LOCATIONS}
                     bind:progress
                     disableDefaultUI
                     draggable={false}
