@@ -13,6 +13,7 @@
         STREET_VIEW_LOCATIONS,
     } from './locations'
     import * as images from './lib/images'
+    import Popup from './lib/Popup.svelte'
 
     let progress: number = $state(0)
 
@@ -21,7 +22,7 @@
 
 <main>
     <div class="header">
-        <h1>A TITLE</h1>
+        <h1>In Tandem</h1>
     </div>
 
     <div class="center-column">
@@ -444,8 +445,10 @@
             present and future self&mdash;don't forget to be creative and build.
         </p>
 
-        <details>
-            <summary>Craft Statement and Annotated Bibliography</summary>
+        <Popup>
+            {#snippet button(onclick)}
+                <button {onclick}>Craft Statement and Annotated Bibliography</button>
+            {/snippet}
 
             <h2>Craft Statement</h2>
 
@@ -770,7 +773,7 @@
                 on the Bradbury Building while I described my personal
                 experience there.
             </p>
-        </details>
+        </Popup>
     </div>
 </main>
 
@@ -917,6 +920,11 @@
         justify-items: center;
     }
     
+    /*Yes horrible hacks I'm sorry*/
+    .columns:last-child {
+        margin-bottom: 0;
+    }
+    
     .scroll-content :global(.document) {
         max-width: 80%;
         margin: 2em auto;
@@ -925,5 +933,22 @@
     .note {
         font-style: italic;
         text-align: center;
+    }
+    
+    button {
+        font-size: 1.5em;
+        padding: 2rem;
+        background-color: #2f2f3d;
+        cursor: pointer;
+        transition: 0.5s;
+        border-radius: 2rem;
+        border: none;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+    
+    button:hover {
+        filter: brightness(1.1);
     }
 </style>
