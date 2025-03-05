@@ -7,7 +7,7 @@
 <div class="container" class:hidden>
     <div class="dialog">
         Please view on a wider screen or rotate your device
-        <XButton onclick={() => (hidden = true)}/>
+        <XButton onclick={() => (hidden = true)} />
     </div>
 </div>
 

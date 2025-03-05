@@ -5,19 +5,18 @@
         src,
         alt,
     }: {
-        src: string,
-        alt: string,
+        src: string
+        alt: string
     } = $props()
-    
+
     let opened = $state(false)
-    
+
     function onclickOverlay(event: MouseEvent) {
-        if (event.target === event.currentTarget)
-            opened = false
+        if (event.target === event.currentTarget) opened = false
     }
 </script>
 
-<button onclick={() => opened = true} class="zoom-image">
+<button onclick={() => (opened = true)} class="zoom-image">
     <img {src} {alt} />
 </button>
 
@@ -26,14 +25,18 @@
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <div class="overlay" onclick={onclickOverlay}>
         <img {src} {alt} />
-        <XButton onclick={() => opened = false} --x-button-offset=2em --x-button-size=2em />
+        <XButton
+            onclick={() => (opened = false)}
+            --x-button-offset="2em"
+            --x-button-size="2em" />
     </div>
 {/if}
 
-<svelte:window onkeydown={event => {
-    if (!opened || event.key !== 'Escape') return
-    opened = false
-}} />
+<svelte:window
+    onkeydown={event => {
+        if (!opened || event.key !== 'Escape') return
+        opened = false
+    }} />
 
 <style>
     button {
@@ -44,16 +47,17 @@
         overflow: hidden;
         line-height: 1;
     }
-    
+
     button img {
         transition: 0.25s;
         width: 100%;
     }
 
-    button:hover img, button:focus img {
+    button:hover img,
+    button:focus img {
         scale: 1.05;
     }
-    
+
     .overlay {
         background-color: #000c;
         position: fixed;
@@ -63,7 +67,7 @@
         display: grid;
         place-items: center;
     }
-    
+
     .overlay img {
         border-radius: 2em;
         max-width: 100%;

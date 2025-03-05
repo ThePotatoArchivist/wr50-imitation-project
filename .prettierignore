@@ -29,5 +29,5 @@ package-lock.json
 README.md
 
 # Assets
-src/lib/icons/*.svg.svelte
+src/assets/images/
 public/

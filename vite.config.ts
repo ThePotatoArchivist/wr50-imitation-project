@@ -7,5 +7,5 @@ export default defineConfig({
     build: {
         target: 'esnext',
     },
-    base: '/wr50-imitation-project'
+    base: '/wr50-imitation-project',
 })

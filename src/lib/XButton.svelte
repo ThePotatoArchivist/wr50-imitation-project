@@ -5,7 +5,7 @@
         onclick,
         fixed = false,
     }: {
-        onclick?: MouseEventHandler<HTMLButtonElement>,
+        onclick?: MouseEventHandler<HTMLButtonElement>
         fixed?: boolean
     } = $props()
 </script>
@@ -29,7 +29,7 @@
         border: none;
         background-color: transparent;
     }
-    
+
     .fixed {
         position: fixed;
     }
