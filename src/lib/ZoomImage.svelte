@@ -50,7 +50,7 @@
         width: 100%;
     }
 
-    button:hover img {
+    button:hover img, button:focus img {
         scale: 1.05;
     }
     
